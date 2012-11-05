@@ -35,15 +35,20 @@
 
 <p>Symphony is a modern physiology data acquisition framework for Windows and .Net. </p>
 
-<h3>Getting Started</h3>
+<h3>Requirements</h3>
 
-<p>To get started, copy the DLLs in the externals\HDF5DotNet directory to the C:\Windows\System32. To build the installer, you will also need to install the <a href="http://wixtoolset.org">WiX</a> installer toolset.</p>
+<p>Symphony requires Windows 7 (32-bit) and .Net 4.0. It currently supports the following devices:</p>
 
-<p>The solution (src\symphony-core\Symphony.sln) builds with Visual Studio 2010 and requires .Net 4.0.</p>
+<ul>
+<li>Heka Instruments ITC18 (PCI and USB interfaces)</li>
+<li>Molecular Devices MultiClamp (via the MultiClamp commander software interface)</li>
+</ul><h3>Getting Started</h3>
 
-<h3>Using Symphony</h3>
+<p>Install Symphony via the Windows installer. A Matlab-based front end has been developed at the Janelia Farm Research Campus of the Howard Hughes Medical Institute (see the <a href="https://github.com/midgleyf/Symphony-UI">Symphony-UI</a> project).</p>
 
-<p>For running experiments, you should install Symphony via the MSI. The Symphony framework is accessible from any .Net client. A Matlab-based front end has been developed at the Janelia Farm Research Campus of the Howard Hughes Medical Institute (see the <a href="https://github.com/midgleyf/Symphony-UI">Symphony-UI</a> project).</p>
+<h3>Development</h3>
+
+<p>Symphony is a Visual Studio 2010/2012 solution. To build and run the tests, copy the DLLs in the externals\HDF5DotNet directory to the C:\Windows\System32. To build the installer, you will also need to install the <a href="http://wixtoolset.org">WiX</a> installer toolset.</p>
 
 <h3>Authors and Contributors</h3>
 
